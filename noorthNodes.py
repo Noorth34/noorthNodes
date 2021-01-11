@@ -68,17 +68,17 @@ def node_sqrt_initialize():
 
 	Sqrt.input = mFnAttr.create("input", "in", OpenMaya.MFnNumericData.kFloat, 0.0)
 
-	mFnAttr.setReadable(1)
-	mFnAttr.setWritable(1)
-	mFnAttr.setStorable(1)
-	mFnAttr.setKeyable(1)
+	mFnAttr.setReadable(True)
+	mFnAttr.setWritable(True)
+	mFnAttr.setStorable(True)
+	mFnAttr.setKeyable(True)
 
 	Sqrt.output = mFnAttr.create("output", "out", OpenMaya.MFnNumericData.kFloat)
 
-	mFnAttr.setReadable(1)
-	mFnAttr.setWritable(0)
-	mFnAttr.setStorable(0)
-	mFnAttr.setKeyable(0)
+	mFnAttr.setReadable(True)
+	mFnAttr.setWritable(False)
+	mFnAttr.setStorable(False)
+	mFnAttr.setKeyable(False)
 
 	Sqrt.addAttribute(Sqrt.input)
 	Sqrt.addAttribute(Sqrt.output)
@@ -92,10 +92,10 @@ def node_readval_initialize():
 
 	ReadVal.input = mFnAttr.create("input", "in", OpenMaya.MFnNumericData.kFloat, 0.0)
 
-	mFnAttr.setReadable(1)
-	mFnAttr.setWritable(1)
-	mFnAttr.setStorable(1)
-	mFnAttr.setKeyable(1)
+	mFnAttr.setReadable(True)
+	mFnAttr.setWritable(True)
+	mFnAttr.setStorable(True)
+	mFnAttr.setKeyable(True)
 
 	ReadVal.addAttribute(ReadVal.input)
 

@@ -1,0 +1,13 @@
+global proc AEdynLockAttributeTemplate ( string $nodeName )
+{
+	editorTemplate -beginLayout "Attributes" -collapse 0;
+		editorTemplate -addControl "input";
+		editorTemplate -addControl "weight";
+		editorTemplate -addControl "attribute_to_lock";
+	editorTemplate -endLayout;
+	editorTemplate -beginLayout "Node Behavior" -collapse 1;
+		editorTemplate -addControl "caching";
+		editorTemplate -addControl "frozen";
+		editorTemplate -addControl "nodeState";
+	editorTemplate -endLayout;
+}
